@@ -1,0 +1,83 @@
+@import "footer.scss";
+
+/* VARIABLES */
+
+    $naranja: #ffa500;
+    $azul: #0000ff;
+
+/* NESTING */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ANIMACIÓN OPCIONES NAVBAR */
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+/* FONDO MENÚ */
+
+.container-fluid {
+  background-color: $naranja;
+  border-style: solid;
+  border-color: $azul;
+}
+
+/* FONDO COLOR PANTALLA */
+
+body {
+  background-color: whitesmoke;
+}
+
+/* BANNER */
+
+.banner img {
+  width: 100%;
+  padding-top: 15px;
+  height: 250px;
+}
+
+/* GRID FOTOS-NOMBRES-TEXTOS PERSONAJES */
+
+.container {
+  display: grid;
+  grid-template-columns: 80%;
+  margin-top: 50px;
+}
+
+/* EXTEND */
+
+.pjfoto1, .pjfoto2, .pjfoto3, .pjfoto4, .pjfoto5, .pjfoto6 {
+  display: grid;
+  width: 20rem;
+  margin-top: 50px;
+}
+
+.pjnombre1, .pjnombre2, .pjnombre3, .pjnombre4, .pjnombre5, .pjnombre6 {
+  display: grid;
+  margin-top: 10px;
+}
+
+.pjtexto1, .pjtexto2, .pjtexto3, .pjtexto4, .pjtexto5, .pjtexto6 {
+  display: grid;
+  margin-top: 1px;
+}
+
+/* PADDING/MARGIN TITULOS DE CADA SOLAPA */
+
+.opvideos, .videos, .openings, .guia {
+  margin-top: 10px;
+}
+
+.donde-ver-naruto {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container-fluid {
+    background-color: $naranja;
+    border-style: solid;
+    border-color: $azul;
+  }
+}
