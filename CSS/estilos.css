@@ -73,14 +73,15 @@ body {
   margin-top: 1px;
 }
 
-/* PADDING/MARGIN TITULOS DE CADA SOLAPA */
-.opvideos, .videos, .openings, .guia {
+/* PADDING/MARGIN TITULOS Y CONTENIDO DE CADA SOLAPA */
+.opvideos, .videos, .openings, .guia, .videosop, .canciones-op, .canciones-end, .sinopsis {
   margin-top: 10px;
+  padding-left: 1rem;
 }
 
-.donde-ver-naruto {
+.donde-ver-naruto, .capitulos, .link-anime, .titulo-argumento {
   margin-top: 20px;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 500px) {
