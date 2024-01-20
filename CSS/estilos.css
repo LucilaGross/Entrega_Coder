@@ -1,43 +1,11 @@
-@charset "UTF-8";
-/* FOOTER */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-footer img {
-  width: 40px;
-  padding-top: 30px;
-}
-
-/* COPYRIGHT */
-.masashi {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 50px;
-  padding-right: 20px;
-}
-
-/* REDES */
-.redes {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  padding-right: 20px;
-  margin-top: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* VARIABLES */
-/* NESTING */
-/* ANIMACIÓN OPCIONES NAVBAR */
-.nav-item:hover {
-  font-weight: bold;
-}
-
-/* FONDO MENÚ */
-.container-fluid {
-  background-color: #ffa500;
-  border-style: solid;
-  border-color: #0000ff;
-}
-
-/* FONDO COLOR PANTALLA */
 body {
   background-color: whitesmoke;
 }
@@ -49,46 +17,66 @@ body {
   height: 250px;
 }
 
-/* GRID FOTOS-NOMBRES-TEXTOS PERSONAJES */
-.container {
-  display: grid;
-  grid-template-columns: 80%;
-  margin-top: 50px;
+.header nav .container-fluid {
+  background-color: #ffa500;
+  border-style: solid;
+  border-color: #0000ff;
 }
 
-/* EXTEND */
-.pjfoto1, .pjfoto2, .pjfoto3, .pjfoto4, .pjfoto5, .pjfoto6 {
-  display: grid;
-  width: 20rem;
-  margin-top: 50px;
+.nav-item:hover {
+  font-weight: bold;
 }
 
-.pjnombre1, .pjnombre2, .pjnombre3, .pjnombre4, .pjnombre5, .pjnombre6 {
-  display: grid;
-  margin-top: 10px;
+.cartas-personajes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.cartas-personajes .img-card {
+  width: 25rem;
 }
 
-.pjtexto1, .pjtexto2, .pjtexto3, .pjtexto4, .pjtexto5, .pjtexto6 {
-  display: grid;
-  margin-top: 1px;
+.cards-videos-content {
+  display: flex;
+  align-items: flex-end;
 }
 
-/* PADDING/MARGIN TITULOS Y CONTENIDO DE CADA SOLAPA */
-.opvideos, .videos, .openings, .guia, .videosop, .canciones-op, .canciones-end, .sinopsis {
-  margin-top: 10px;
-  padding-left: 1rem;
-}
-
-.donde-ver-naruto, .capitulos, .link-anime, .titulo-argumento {
+.link-anime {
   margin-top: 20px;
+  font-size: 1.5rem;
   padding-left: 1rem;
+  text-decoration: none;
+}
+.link-anime:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffa500, 0 0 70px #ffa500, 0 0 80px #ffa500, 0 0 100px #ffa500, 0 0 150px #ffa500;
 }
 
+/* FOOTER */
+footer img {
+  width: 40px;
+  padding-top: 30px;
+}
+footer .redes {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+footer .masashi {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+
+/* COPYRIGHT */
+/* REDES */
 @media only screen and (max-width: 500px) {
-  .container-fluid {
-    background-color: #ffa500;
-    border-style: solid;
-    border-color: #0000ff;
+  .cartas-personajes .img-card {
+    width: 18rem;
   }
 }
 
