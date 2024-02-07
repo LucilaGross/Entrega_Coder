@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+body {
+  background-color: whitesmoke;
+}
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  padding-top: 15px;
+  height: 250px;
+}
+
+.header nav .container-fluid {
+  background-color: #ffa500;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.cartas-personajes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.cartas-personajes .img-card {
+  width: 25rem;
+}
+
+.cards-videos-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.link-anime {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+.link-anime:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffa500, 0 0 70px #ffa500, 0 0 80px #ffa500, 0 0 100px #ffa500, 0 0 150px #ffa500;
+}
+
+/* FOOTER */
+footer img {
+  width: 40px;
+  padding-top: 30px;
+}
+footer .redes {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+footer .masashi {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+
+/* COPYRIGHT */
+/* REDES */
+@media only screen and (max-width: 500px) {
+  .cartas-personajes .img-card {
+    width: 18rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
