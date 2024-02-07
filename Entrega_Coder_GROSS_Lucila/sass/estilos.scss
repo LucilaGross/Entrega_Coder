@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./utilities/variables";
+@import "./base/base";
+@import "./components/banner";
+@import "./header";
+@import "./components/components";
+@import "./footer";
+@import "./utilities/mediaQ";

@@ -1,0 +1,12 @@
+.header{
+    nav{
+      .container-fluid{
+        background-color: $naranja;
+        border-style: solid;
+        border-color: $azul;
+      }
+    }
+  }
+  .nav-item:hover {
+    font-weight: bold;
+  }
